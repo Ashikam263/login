@@ -12,12 +12,8 @@ export default function LoginForm() {
 
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault();
-    if (password.length < 8) {
-      setError("Password must be at least 8 characters long");
-      return;
-    }
     try {
       const res = await signIn("credentials", {
         email,
@@ -25,7 +21,7 @@ export default function LoginForm() {
         redirect: false,
       });
 
-      if (res.error) {
+      if (res?.error) {
         setError("Invalid Credentials");
           setTimeout(() => {
             setError("");
