@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,9 +23,34 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/register/page.jsx", "app/api/auth/[...nextauth]/route.jsx", "app/register/page.jsx", "components/UserInfo.tsx", "components/RegisterForm.tsx", "components/LoginForm.tsx", "components/LoginForm.tsx", "components/RegisterForm.tsx", "app/api/auth/[...nextauth]/route.ts", "app/Providers.ts", "app/page.jsx", "app/api/register/route.ts", "app/api/userExists/route.ts", "models/user.ts", "lib/mongodb.ts", "app/dashboard/page.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/register/page.jsx",
+    "app/api/auth/[...nextauth]/route.jsx",
+    "app/register/page.jsx",
+    "components/UserInfo.tsx",
+    "components/RegisterForm.tsx",
+    "components/LoginForm.tsx",
+    "components/LoginForm.tsx",
+    "components/RegisterForm.tsx",
+    "app/api/auth/[...nextauth]/route.ts",
+    "app/Providers.ts",
+    "app/page.tsx",
+    "app/api/register/route.ts",
+    "app/api/userExists/route.ts",
+    "models/user.ts",
+    "lib/mongodb.ts",
+    "app/dashboard/page.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
